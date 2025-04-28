@@ -16,26 +16,32 @@ public class Main {
             System.out.println("5. Tampilkan Karyawan");
             System.out.println("6. Cari Karyawan");
             System.out.println("7. Keluar");
-            System.out.println("Masukkan pilihan Anda : ");
+            System.out.print("Masukkan pilihan Anda : ");
             int pilihan = input.nextInt();
             switch (pilihan) {
                 case 1:
                     perusahaan.tambahKaryawan();
+                    System.out.println();
                     break;
                 case 2:
                     perusahaan.hapusKaryawan();
+                    System.out.println();
                     break;
                 case 3:
                     perusahaan.ubahPosisi();
+                    System.out.println();
                     break;
                 case 4:
                     perusahaan.ubahGaji();
+                    System.out.println();
                     break;
                 case 5:
                     perusahaan.tampilkanKaryawan();
+                    System.out.println();
                     break;
                 case 6:
                     perusahaan.cariKaryawan();
+                    System.out.println();
                     break;
                 default:
                     System.out.println("Terima Kasih telah mengunjungi");

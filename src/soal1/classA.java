@@ -13,6 +13,7 @@ public class classA {
         this.posisi = posisi;
         this.tanggal = tanggal;
         setGaji(gaji);
+
     }
 
     public String getId() { //Berikan id karyawan
@@ -48,7 +49,7 @@ public class classA {
             this.gaji = gaji;
         }
         else {
-            System.out.println("Gaji tidak boleh negatif");
+            setId(null);
         }
     }
 

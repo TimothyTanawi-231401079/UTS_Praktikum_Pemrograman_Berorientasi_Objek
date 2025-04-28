@@ -23,11 +23,16 @@ public class classB {
 
             if (cariIdKaryawan(id) == null) {
                 classA karyawan = new classA(id, nama, posisi, gaji, tanggal);
-                daftarKaryawan.add(karyawan);
-                System.out.println("Karyawan berhasil ditambahkan.");
+                if(karyawan.getId() == null){
+                    System.out.println("Gaji tidak boleh negatif");
+                }
+                else{
+                    daftarKaryawan.add(karyawan);
+                    System.out.println("Karyawan berhasil ditambahkan.");
+                }
+
             } else {
                 System.out.println("ID karyawan sudah tersedia.");
-
             }
             System.out.print("Ingin menambahkan lagi? (y/n)");
             String yn = input.nextLine();
